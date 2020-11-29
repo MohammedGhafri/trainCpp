@@ -11,8 +11,11 @@ int main()
     string *pName = &name;
     cout <<age<<endl; // the variable it self.
     cout <<pAge<<endl; // the physical address.
-    cout <<&age<<endl; // the physical address also.
+    cout <<*&age<<endl; // the physical address also.
+    cout <<&*&age<<endl; // the physical address also.
+
     cout <<*pAge<<endl; // Derefrencs the physical address. and it will give you the contents.
+    cout <<*&age<<endl; // Derefrencs the physical address. and it will give you the contents.
 
     cout << *pName;
 }

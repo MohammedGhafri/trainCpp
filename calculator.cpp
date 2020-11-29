@@ -21,10 +21,20 @@ int arr[]={10,2,500,6,8,9};
 // int l = arr.length();
 // int arrSize = sizeof(arr)/sizeof(arr[0]);
 int arrSize = *(&arr + 1) - arr;
-cout << *(&arr + 1)-10<<arrSize<<endl;
-for (int i = 0; i < arrSize; i++){
-cout<<arr[i]<<endl;
-}
+// int a= *(&arr+1);
+// cout << arr +3<<endl<<(&arr + 1)<<endl<<&arr<<endl<<arrSize<<endl;
+cout<< arr[0]<<"  start of array"<<endl;
+cout<< arr<<"start of array"<<endl;
+// int a =arr;
+// cout <<"A : "<<a<<endl;
+cout << "pointrt : " << *(&arr + 1)<< endl;
+cout <<"here: " <<&arr << *&arr<<endl;
+cout<< arr[5]<<" end of array"<<endl;
+cout <<*&arr[5];
+
+// for (int i = 0; i < 5; i++){
+// cout<<arr[i]<<endl;
+// }
 {
     /* code */
 }
